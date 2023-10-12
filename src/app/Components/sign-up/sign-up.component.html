@@ -1,0 +1,22 @@
+<form [formGroup]="SignUpFG">
+  <div class="container">
+    <h2>Sign Up</h2>
+   
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" formControlName="UserName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" formControlName="UserEmail" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" formControlName="UserPassword" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Sign Up" (click)="onSubmit()">
+      </div>
+    
+  </div>
+</form>
