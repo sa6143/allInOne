@@ -106,9 +106,9 @@ async function wait1(timetowait:number) {
 }
 async function app() {
   await wait(400)
-  console.log("i wait for 400")
+  console.log("i wait for 4000")
   await wait1(300)
-  console.log("i wait for 300")
+  console.log("i wait for 3000")
   await wait(200)
   console.log("i wait for 200")
   await wait1(200)
